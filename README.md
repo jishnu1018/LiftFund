@@ -1,6 +1,6 @@
-# 🪙 FundFlow — Decentralized Crowdfunding Platform
+#  LIFTFUND — Decentralized Crowdfunding Platform
 
-FundFlow is a decentralized crowdfunding platform built on Ethereum blockchain. It allows users to create fundraising campaigns, contribute with crypto donations, and track campaign performance — securely and transparently on-chain.
+LIFTFUND is a decentralized crowdfunding platform built on Ethereum blockchain. It allows users to create fundraising campaigns, contribute with crypto donations, and track campaign performance — securely and transparently on-chain.
 
 ---
 
@@ -53,33 +53,6 @@ npm run dev
 ```
 Note: Make sure MetaMask is installed in your browser and connected to the Sepolia Testnet.
 
-
-# 🔑 Environment Variables for Deployment
-
-###  1️⃣ Create .env in project root:
-
-```bash
-PRIVATE_KEY=your_private_key
-SEPOLIA_URL=https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID
-```
-
-### 2️⃣ Load it in hardhat.config.js:
-
-```bash
-require("@nomicfoundation/hardhat-toolbox");
-require("@nomicfoundation/hardhat-ignition");
-require("dotenv").config();
-
-module.exports = {
-  solidity: "0.8.19",
-  networks: {
-    sepolia: {
-      url: process.env.SEPOLIA_URL,
-      accounts: [process.env.PRIVATE_KEY],
-    },
-  },
-};
-```
 
 # 🔐 Smart Contract Deployment
 
